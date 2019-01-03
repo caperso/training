@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Key Code Map</title>
+    <style>
+        body {
+            background-color: rgba(18, 96, 133, 0.62)
+        }
+        input {
+            position: absolute; 
+            display: block; 
+            left: 30%; 
+            top: 50%;
+            width: 200px;
+            height: 30px;
+        }
+        #answer {
+            position: absolute;
+            left: 30%;
+            top: 40%;
+            font-size: 20px;
+        }
+        #code {
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="key">
+    <div id="answer">you pressed&nbsp;&nbsp;&nbsp;&nbsp;<span id="code">0</span></div>
+    <script>
+        var code = document.getElementById("code");
+        var ori  = document.getElementById("key");
+            ori.onkeypress = function (e) {
+                code.innerText = event.keyCode;
+            }
+    </script>
+</body>
+</html>
