@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    body {
+      position: relative;
+      background-color: rgb(117, 135, 155);
+    }
+
+    .box {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      transform: translate3d(-50%, -50%, 0)
+    }
+
+    .sized-image {
+      width: 200px;
+      height: 200px;
+    }
+
+    .text {
+      display: block;
+      font-size: 22px;
+      line-height: 3;
+      color: white
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <img class="sized-image" src="404-1.png" alt="">
+    <span class="text">Oops, this page is out of service at this moment,<br>Don't worry, Our programmer may try their
+      best working on it.
+    </span>
+  </div>
+</body>
+
+</html>
