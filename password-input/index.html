@@ -1,0 +1,117 @@
+<html>
+<head>
+  <meta charset="utf8">
+  <title>五种密码类型</title>
+  <style>
+    body {
+        font-size: 16px;
+        }
+        .container {
+            border: 1px groove black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type=password],input[type=text] {
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            transition: box-shadow .5s;
+        }
+        input[type=password]:hover,input[type=text]:hover {
+            /* 添加边框阴影 */
+            box-shadow: inset 0 1px 3px rgba(0,0,0,.05),0 0 8px rgba(82,168,236,.6);
+        }
+
+        #customPwdContainer {
+            /* 如果这里不声明relative,那么限制不了内部的absolute元素 */
+            position: relative;
+        }
+
+
+
+        #plain5 {
+            /* 这样才能让2个元素重叠 */
+            position: absolute;
+            /* 为了让上边框重合,否则会差一个上边框的宽度 */
+            top: 0;
+            z-index: 1;
+        }
+
+        </style>
+</head>
+
+<body>
+  <div class="container">
+    <label>普通密码框</label>
+    <input type="password">
+  </div>
+
+  <div class="container">
+    <label>带占位符的密码框</label>
+    <input type="password" placeholder="请输入密码">
+  </div>
+
+  <div class="container">
+    <label>限制长度的密码框</label>
+    <input type="password" maxlength="6">
+  </div>
+
+  <div class="container">
+    <label>可更改可见性的密码框</label>
+    <input type="password" id="pwd4">
+    <input type="checkbox" onchange="changePwd4Visible()" id="cb4">是否显示密码
+  </div>
+  
+  <div class="container">
+    <label>自定义密码框</label>
+    <span id="customPwdContainer">
+      <!-- 明文 -->
+      <input type="text" id="plain5">
+      <!-- 密文 -->
+      <input type="text" id="pwd5">
+    </span>
+    <input type="checkbox" onchange="changePwd5Visible()" id="cb5">是否显示密码
+  </div>
+
+
+  <script>
+    var pwd4 = document.getElementById("pwd4");
+    var cb4 = document.getElementById("cb4");
+
+    function changePwd4Visible() {
+      pwd4.type = event.target.checked ? "text" : "password";
+    }
+
+
+
+    var plain5 = document.getElementById("plain5");
+    var pwd5 = document.getElementById("pwd5");
+    var cb5 = document.getElementById("cb5");
+    //如果没有onkeydown,那么一直按着按键不会触发
+    //onkeydown的时候并不会立马更新value,所以必须有onkeyup
+    //如果只有onkeydown和onkeyup,那么删除文本不会触发;
+    plain5.onkeydown = plain5.onkeyup = plain5.onchange = function () {
+      pwd5.value = plain5.value.replace(/./g, "*");
+      /*
+      这里一旦设置selection,那么就把聚焦的对话框转移了.所以输入密文密码时无法显示光标
+      if(!cb5.checked) {
+          pwd5.selectionStart = plain5.selectionStart;
+          pwd5.selectionEnd = plain5.selectionEnd;
+      }
+      */
+    }
+
+    function changePwd5Visible() {
+      //显示明文,密文框在下层
+      //显示密文,明文框在上层,透明度为0
+      plain5.style.opacity = cb5.checked ? 1 : 0;
+    }
+    changePwd5Visible();
+  </script>
+</body>
+
+</html>
