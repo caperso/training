@@ -19,6 +19,8 @@
     "scss": "^0.2.4",
     "scss-loader": "^0.0.1",
     "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
