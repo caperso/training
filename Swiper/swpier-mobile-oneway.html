@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-
   <title>swiper2</title>
   <style>
     * {
@@ -68,7 +67,24 @@
 
 
   <script>
-    let list = document.getElementsByClassName
+    let items = $('.swiper')[0].children;
+    let startX, endX;
+
+    for (let i = 0; i < items.length; i++) {
+      const item = items[i];
+      $(item).on('touchstart', touchStart())
+      $(item).on('touchend', touchEnd())
+    }
+
+    function touchStart(e) {
+      e.preventDefault();
+
+    }
+
+    function touchStart(e) {
+      e.preventDefault();
+
+    }
   </script>
 </body>
 
