@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <title>swiper2</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%
+    }
+
+    .swiper {
+      position: relative;
+      width: 500%;
+      height: 140px;
+      font-size: 32px;
+      line-height: 140px;
+      color: aliceblue;
+      transition: all 0.25s
+    }
+
+    .swiper>* {
+      list-style: none;
+      width: 20%;
+      text-align: center;
+      float: left;
+    }
+
+    .swiper:nth-child(1) {
+      background-color: orangered;
+    }
+
+    .swiper:nth-child(2) {
+      background-color: gold;
+    }
+
+    .swiper:nth-child(3) {
+      background-color: greenyellow;
+    }
+
+    .swiper:nth-child(4) {
+      background-color: green;
+    }
+
+    .swiper:nth-child(5) {
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <ul class="swiper">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+  </div>
+
+
+  <script>
+    let list = document.getElementsByClassName
+  </script>
+</body>
+
+</html>

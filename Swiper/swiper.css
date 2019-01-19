@@ -136,22 +136,51 @@ table {
 }
 
 .swiper-wrapper {
-  width: 750px;
+  width: 100vw;
   height: 320px;
   background: #fff;
   margin: 20px auto;
   box-sizing: border-box;
-  border: 1px pink solid;
   overflow: hidden;
 }
 
 .swiper-content {
-  display: block;
-  width: 100%;
+  display: flex;
+  position: relative;
+  flex-flow: row nowrap;
   height: 100%;
+  margin: 0 auto;
+  max-width: 720px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+@media screen and (max-width: 680px) {
+  .swiper-content {
+    height: 10rem;
+    width: 20rem;
+  }
 }
 
 .item {
-  width: 100vw;
-  display: inline-block;
+  flex: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.25s;
+  opacity: 0;
+}
+
+.show {
+  left: 0;
+  opacity: 1;
+}
+
+.prev {
+  left: -100%;
+}
+
+.next {
+  left: 100%;
 }
