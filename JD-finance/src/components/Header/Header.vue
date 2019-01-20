@@ -18,30 +18,31 @@ export default {
   display: flex;
   position: fixed;
   top: 0;
+  color: #666;
   bottom: 0;
   left: 0;
-  align-items: center;
   right: 0;
+  align-items: center;
   justify-content: space-between;
-  height: 2.5rem;
-  line-height: 2.5rem;
+  height: 100px;
+  line-height: 100px;
   background: #fff url('//m.jr.jd.com/spe/qyy/main/images/jr-logo.png') center center no-repeat;
   background-size: auto 50%;
   font-size: 32;
   z-index: 100;
 
   .log {
-    height: 0.75rem;
-    line-height: 0.75rem;
+    height: 30px;
+    line-height: 30px;
     font-size: 28px;
     margin: 0 0 0 0.45rem;
     flex: 1;
   }
 
   .appDownload {
-    margin: 0 0.6rem 0 0;
-    font-size: 0.6rem;
-    height: 1.4rem;
+    margin: 0 24px 0 0;
+    font-size: 24px;
+    height: 56px;
     border-radius: 0.1rem;
   }
 }

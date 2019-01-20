@@ -1,6 +1,6 @@
 <template>
   <div class="index">
-    <indexSwiper></indexSwiper>
+    <indexSlider></indexSlider>
 
     <div class="swiper-wrapper">
       <div class="swiper-content"></div>
@@ -10,7 +10,7 @@
 </template>
 
 <script type="text/emcascript6">
-import swiperSlide from '@/components/Cores/Slider'
+import indexSlider from '@/components/Index/indexSlider'
 export default {
   data () {
     return {
@@ -18,7 +18,7 @@ export default {
     }
   },
   components: {
-    swiperSlide
+    indexSlider
   }
 }
 </script>
