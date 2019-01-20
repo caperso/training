@@ -1,11 +1,14 @@
 <template>
   <article>
-    <Slider :items="items" :cname="slider"></Slider>
-    <section class="list">
-      <div class="item" v-for="item in enters" :key="item.img">
-        <router-link :to="{name:item.href}"></router-link>
-        <img :src="item.src" alt>
-        <h4></h4>
+    <!-- 滑动体 -->
+    <slider :items="items" :cname="$style.slider"></slider>
+    <!-- 下方小窗 -->
+    <section :class="$style.list">
+      <div :class="$style.item" v-for="item in enters" :key="item.src">
+        <router-link :to="{name:item.href}">
+          <img :src="item.src" alt="item.title">
+          <h4>{{item.title}}</h4>
+        </router-link>
       </div>
     </section>
   </article>
@@ -16,7 +19,7 @@ import Slider from '@/components/Cores/Slider'
 
 export default {
   components: {
-    Slider
+    'slider': Slider
   },
   data () {
     return {
@@ -41,16 +44,15 @@ export default {
         title: '白条提额',
         src: '//img12.360buyimg.com/jrpmobile/jfs/t5488/298/1036263348/12073/b4f4de97/590ac8e8Ne9def22e.png?width=135&height=135'
       }],
-
       items: [{
-        href: 'index1',
+        href: '/index',
         src: '//img12.360buyimg.com/jrpmobile/jfs/t16138/325/817844900/36681/5d874455/5a422029Ncd678ea3.jpg?width=750&height=320'
       }, {
-        href: 'index2',
+        href: '/index',
         src: '//img12.360buyimg.com/jrpmobile/jfs/t13465/324/2563794460/43029/3ffca963/5a421f83Ne8089231.jpg?width=750&height=320'
       }, {
-        href: 'index3',
-        src: '//img12.360buyimg.com/jrpmobile/jfs/t13465/324/2563794460/43029/3ffca963/5a421f83Ne8089231.jpg?width=750&height=320'
+        href: '/index',
+        src: '//img12.360buyimg.com/jrpmobile/jfs/t13744/11/2508939408/43213/58bfe502/5a421ff3N52d0a474.jpg?width=750&height=320'
       }
       ]
     }
@@ -58,11 +60,14 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" module>
 @import "../../common/scss/element.scss";
-// .slider {
-//   margin-top: 120px;
-// }
+.slider {
+  margin-top: 120px;
+  img {
+    width: 100vw;
+  }
+}
 
 .list {
   @include list(row);

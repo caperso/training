@@ -1,9 +1,9 @@
 <template>
   <section :class="cname">
     <swiper :options="options" :not-next-tick="options.notNextTick">
-      <swiper-slide v-for="item in items" :key="item.href">
+      <swiper-slide v-for="(item,key) in items" :key="key">
         <router-link :to="{ name: item.href}">
-          <img :src="item.src" alt>
+          <img :src="item.src">
         </router-link>
       </swiper-slide>
       <div class="swiper-pagination" v-if="options.pagination" slot="pagination"></div>
