@@ -7,6 +7,8 @@
     </div>
     <novice></novice>
     <loanbanner></loanbanner>
+    <account></account>
+    <newgoods></newgoods>
   </div>
 </template>
 
@@ -14,6 +16,8 @@
 import IndexSlider from '@/components/Index/indexSlider'
 import Novice from '@/components/Index/Novice'
 import LoanBanner from '@/components/Index/LoanBanner'
+import Account from '@/components/Index/Account'
+import NewGoods from '@/components/Index/NewGoods'
 export default {
   data () {
     return {
@@ -23,7 +27,9 @@ export default {
   components: {
     indexSlider: IndexSlider,
     novice: Novice,
-    loanbanner: LoanBanner
+    loanbanner: LoanBanner,
+    account: Account,
+    newgoods: NewGoods
   }
 }
 </script>
