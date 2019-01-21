@@ -20,6 +20,9 @@ export default {
   }
 }
 </script>
-
-<style>
+<style lang="scss">
+#app {
+  position: relative;
+  background-color: rgb(245, 245, 245);
+}
 </style>

@@ -25,6 +25,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  border-bottom: 1px solid #e5e5e5;
   line-height: 100px;
   background: #fff url('//m.jr.jd.com/spe/qyy/main/images/jr-logo.png') center center no-repeat;
   background-size: auto 50%;

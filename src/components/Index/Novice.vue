@@ -60,7 +60,7 @@ export default {
 .panel {
   @include panel;
   > h4 {
-    border-bottom: 1px #333 solid;
+    border-bottom: 1px solid #e5e5e5;
   }
   .content {
     @include list(row);

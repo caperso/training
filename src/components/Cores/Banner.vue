@@ -1,5 +1,5 @@
 <template>
-  <div :class="$style.banner" :style="{height:'item.height'}">
+  <div :class="$style.banner" :style="{height:'item.height '}">
     <img :src="item.src" alt>
   </div>
 </template>
@@ -15,9 +15,9 @@ export default {
       type: Object,
       default () {
         return {
-          src: "",
-          href: "/index",
-          height: '67px'
+          src: '',
+          href: '/index',
+          height: '5.75rem'
         }
       }
     }
@@ -27,6 +27,11 @@ export default {
 
 <style module lang="scss">
 .banner {
-  width: 100%;
+  width: 100vw;
+  margin: 10px auto;
+  & > img {
+    width: 100%;
+    height: 100%;
+  }
 }
 </style>

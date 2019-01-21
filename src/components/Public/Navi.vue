@@ -50,7 +50,7 @@ export default {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  border-top: 1px #333 solid;
+  border-top: 1px solid #e5e5e5;
   background: #fff;
   z-index: 100;
   .linkWrapper {

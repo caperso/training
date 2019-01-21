@@ -35,6 +35,7 @@ $fontSize: 32px) {
     height: $height;
     line-height: $height;
     padding: $txtPadding;
+    border-bottom: 1px solid #e5e5e5;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
