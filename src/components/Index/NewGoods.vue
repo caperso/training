@@ -1,7 +1,7 @@
 <template>
   <panel title="新品推荐" :class="$style.panel">
     <section :class="$style.content">
-      <a href="/index" :class="$style.more">更多尖货&gt;</a>
+      <a :class="$style.more">更多尖货&gt;</a>
       <slider :options="options" :items="items" :class="cname"></slider>
     </section>
   </panel>

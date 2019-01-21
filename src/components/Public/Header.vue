@@ -28,7 +28,7 @@ export default {
   line-height: 100px;
   background: #fff url('//m.jr.jd.com/spe/qyy/main/images/jr-logo.png') center center no-repeat;
   background-size: auto 50%;
-  font-size: 32;
+  font-size: 32px;
   z-index: 100;
 
   .log {

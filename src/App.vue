@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import header from '@/components/Header/Header'
-import navi from '@/components/Navi/Navi'
+import header from '@/components/Public/Header'
+import navi from '@/components/Public/Navi'
 export default {
   name: 'App',
   components: {

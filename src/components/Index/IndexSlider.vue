@@ -5,7 +5,7 @@
     <!-- 下方小窗 -->
     <section :class="$style.list">
       <div :class="$style.item" v-for="item in enters" :key="item.src">
-        <router-link :to="{name:item.href}">
+        <router-link :to="{path:item.href}">
           <img :src="item.src" alt="item.title">
           <h4>{{item.title}}</h4>
         </router-link>
@@ -44,6 +44,7 @@ export default {
         title: '白条提额',
         src: '//img12.360buyimg.com/jrpmobile/jfs/t5488/298/1036263348/12073/b4f4de97/590ac8e8Ne9def22e.png?width=135&height=135'
       }],
+
       items: [{
         href: '/index',
         src: '//img12.360buyimg.com/jrpmobile/jfs/t16138/325/817844900/36681/5d874455/5a422029Ncd678ea3.jpg?width=750&height=320'
