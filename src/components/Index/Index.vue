@@ -7,7 +7,7 @@
     </div>
     <novice></novice>
     <loanbanner></loanbanner>
-    <account></account>
+    <financeselect></financeselect>
     <newgoods></newgoods>
     <service></service>
   </div>
@@ -17,7 +17,7 @@
 import IndexSlider from '@/components/Index/indexSlider'
 import Novice from '@/components/Index/Novice'
 import LoanBanner from '@/components/Index/LoanBanner'
-import Account from '@/components/Index/Account'
+import FinanceSelect from '@/components/Index/FinanceSelect'
 import NewGoods from '@/components/Index/NewGoods'
 import Service from '@/components/Index/Service'
 export default {
@@ -30,7 +30,7 @@ export default {
     indexSlider: IndexSlider,
     novice: Novice,
     loanbanner: LoanBanner,
-    account: Account,
+    financeselect: FinanceSelect,
     newgoods: NewGoods,
     service: Service
   }
