@@ -19,7 +19,7 @@ import Novice from '@/components/Index/Novice'
 import LoanBanner from '@/components/Index/LoanBanner'
 import FinanceSelect from '@/components/Index/FinanceSelect'
 import NewGoods from '@/components/Index/NewGoods'
-import Service from '@/components/Index/Service'
+import Service from '@/components/Public/Service'
 export default {
   data () {
     return {

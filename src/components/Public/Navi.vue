@@ -44,32 +44,29 @@ export default {
   position: fixed;
   width: 100%;
   height: 100px;
-  box-sizing: border-box;
   bottom: 0;
-  left: 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  box-sizing: border-box;
   border-top: 1px solid #e5e5e5;
   background: #fff;
   z-index: 100;
   .linkWrapper {
-    display: inline-block;
-    height: 100%;
-    text-align: center;
+    height: 100px;
     .link {
-      display: block;
-      height: 100%;
-      line-height: 100%;
+      text-align: center;
       text-decoration: none;
+      width: 20%;
+      height: 100px;
       .title {
-        margin-top: -40px;
         color: #000;
         font-size: 22px;
-        white-space: nowrap;
+        height: 22px;
+        line-height: 22px;
       }
       .img {
-        margin: 0.3rem auto 0.15rem;
+        margin: 6px auto 3px;
         width: 44px;
         height: 44px;
       }
