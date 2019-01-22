@@ -5,15 +5,15 @@ import index from '@/components/Index/Index'
 import finance from '@/components/Finance/Finance'
 import loan from '@/components/Loan/Loan'
 import founding from '@/components/Founding/Founding'
-import user from '@/components/User/User'
+import download from '@/components/Public/Download'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [{
-      name: 'home',
-      path: '/',
-      component: index
+      name: 'download',
+      path: '/download',
+      component: download
     },
     {
       name: '/index',

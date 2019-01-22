@@ -4,7 +4,7 @@
       <a class="register">注册</a>&nbsp;|&nbsp;
       <a class="login">登陆</a>
     </span>
-    <button class="appDownload btn">APP下载</button>
+    <router-link class="appDownload" :to="{path:'/download'}">APP下载</router-link>
   </div>
 </template>
 
@@ -41,10 +41,17 @@ export default {
   }
 
   .appDownload {
+    display: inline-block;
+    min-width: 120px;
+    height: 56px;
+    line-height: 56px;
     margin: 0 24px 0 0;
     font-size: 24px;
-    height: 56px;
-    border-radius: 0.1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: #F04752;
+    text-align: center;
+    color: #fff;
   }
 }
 </style>
