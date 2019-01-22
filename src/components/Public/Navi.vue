@@ -63,7 +63,7 @@ export default {
       line-height: 100%;
       text-decoration: none;
       .title {
-        margin-top: -0.5em;
+        margin-top: -40px;
         color: #000;
         font-size: 22px;
         white-space: nowrap;
