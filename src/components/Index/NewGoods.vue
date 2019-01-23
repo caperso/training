@@ -15,7 +15,7 @@ export default {
     return {
       cname: 'goods',
       options: {
-        slidesPerView: 2.3,
+        slidesPerView: 3,
         spaceBetween: 30,
         freeMode: true,
         autoplay: false
@@ -91,7 +91,6 @@ export default {
         width: 100%;
         img {
           width: 100%;
-          max-width: 335px;
           display: block;
           height: 314px;
           border: 1px solid #fafafa;
