@@ -30,7 +30,7 @@ export default {
         title: '消费分期',
         href: '/download'
       }, {
-        src: 'http://img12.360buyimg.com/jrpmobile/jfs/t8311/300/1385281399/9501/130a0046/59b8da06N14f62cf3.png?',
+        src: '//img12.360buyimg.com/jrpmobile/jfs/t8311/300/1385281399/9501/130a0046/59b8da06N14f62cf3.png?',
         title: '借钱',
         href: '/download'
       }, {
