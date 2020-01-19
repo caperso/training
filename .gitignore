@@ -1,10 +1,7 @@
-/useless
-/_ONDEVELOPING
-404page/avatar.jpg
-calendar/vue-calendar/
-.DS_Store
-node_modules/
-//
+
+dist
+node_modules
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -21,10 +18,8 @@ selenium-debug.log
 *.sln
 
 #custom
-JDFinance
 l2jmoj
 .vscode
-_Դ��
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
 
